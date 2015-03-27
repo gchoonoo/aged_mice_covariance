@@ -84,7 +84,6 @@ shinyServer(function(input, output) {
 axis(side=1,at=c(0,.25,.5,.75,1),labels=round(seq(range(cov.cor.m)[1],range(cov.cor.m)[2],length.out=5),3))
       par(op)
   	
-		# Output Heatmap based on Specific Cross Type	
   		}else{
   		  dat_v4[which(substring(row.names(dat_v4),1,2) == datasetInput()),] -> dat_v4_aa 
   		  V <- var(dat_v4_aa, na.rm=TRUE)   
