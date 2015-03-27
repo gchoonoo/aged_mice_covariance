@@ -17,7 +17,7 @@ usePackage("heatmap")
 library(shiny)
 library(heatmap)
 source("heatmapJoe.R")
-source("HeatmapU19_DWB_gabby.R")
+source("HeatmapU19_DWB_gabby_v2.R")
 
 ################################################################
 
