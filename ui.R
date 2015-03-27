@@ -5,7 +5,7 @@ library(heatmap)
 shinyUI(pageWithSidebar(
   
   # Application title
-  titlePanel("Aged Mice Weight Visualized by Covariance Matrices"),
+  titlePanel(" Aged Mice Weight Visualized by Covariance Matrices"),
   
     # Heatmap by Cross
     sidebarPanel(
