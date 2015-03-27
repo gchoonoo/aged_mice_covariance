@@ -9,7 +9,7 @@ shinyUI(pageWithSidebar(
   
     # Heatmap by Cross
     sidebarPanel(
-    	selectInput("variable","Choose a Cross:", 
+    	selectInput("variable","Choose a Strain:", 
                   list("All"="All", 
                        "AA"="AA",
                        "AB"="AB",
