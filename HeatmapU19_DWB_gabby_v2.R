@@ -4,7 +4,7 @@
 
 ##########################################################
 
-# setwd("/Users/choonoo/aged_mice_data_covariance")
+# setwd("/Users/choonoo/aged_mice_covariance")
 
 # save.image("~/aged_mice_cov.RData")
 
@@ -39,16 +39,16 @@ cov.cor <- cov2cor(V)
 cov.cor.m <- data.matrix(cov.cor)
 
 # full covariance heatmap
-hmn <- heatmap(cov.cor.m, col=heat.colors(256))
-image(as.matrix(1:6), col=topo.colors(256),axes=F)
-axis(side=1,at=c(0,.25,.5,.75,1),labels=round(seq(range(cov.cor.m)[1],range(cov.cor.m)[2],length.out=5), 2))
+# hmn <- heatmap(cov.cor.m, col=heat.colors(256))
+# image(as.matrix(1:6), col=topo.colors(256),axes=F)
+# axis(side=1,at=c(0,.25,.5,.75,1),labels=round(seq(range(cov.cor.m)[1],range(cov.cor.m)[2],length.out=5), 2))
 
 # stratify by strain
 dat_v4[which(substring(row.names(dat_v4),1,2) == names(summary(as.factor(substring(row.names(dat_v4),1,2)))[1])),] -> dat_v4_aa
 V2 <- var(dat_v4_aa, na.rm=TRUE)
 cov.cor2 <- cov2cor(V2)
 cov.cor.m2 <- data.matrix(cov.cor2)
-hmn2 <- heatmap(cov.cor.m2, col=heat.colors(256))
+# hmn2 <- heatmap(cov.cor.m2, col=heat.colors(256))
 
 
 
